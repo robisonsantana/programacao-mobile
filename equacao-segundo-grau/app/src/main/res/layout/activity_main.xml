@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextValorA"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/a"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/editTextValorB"
+        app:layout_constraintEnd_toEndOf="@+id/editTextValorB"
+        app:layout_constraintStart_toStartOf="@+id/editTextValorB"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <EditText
+        android:id="@+id/editTextValorB"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="@string/b"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/editTextValorC"
+        app:layout_constraintEnd_toEndOf="@+id/editTextValorC"
+        app:layout_constraintStart_toStartOf="@+id/editTextValorC"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValorA" />
+
+    <EditText
+        android:id="@+id/editTextValorC"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/c"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalc"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCalc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValorB" />
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/calc"
+        app:layout_constraintBottom_toTopOf="@+id/textViewX1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValorC" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="58dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextValorA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewX1"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewX2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewX2"
+        app:layout_constraintStart_toStartOf="@+id/textViewX2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalc" />
+
+    <TextView
+        android:id="@+id/textViewX2"
+        android:layout_width="304dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewX1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
