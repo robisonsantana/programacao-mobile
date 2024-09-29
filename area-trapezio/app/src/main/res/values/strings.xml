@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AreaTrapezio</string>
+    <string name="title">Área de um Trapézio</string>
+    <string name="baseMaior">Base Maior</string>
+    <string name="baseMenor">Base Menor</string>
+    <string name="altura">Altura</string>
+    <string name="calc">Calcular</string>
+    <string name="area">Área =</string>
+</resources>
