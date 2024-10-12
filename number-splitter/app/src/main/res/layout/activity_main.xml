@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNomeRa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/nome_ra"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvAppName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="153dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeRa" />
+
+    <EditText
+        android:id="@+id/etNum"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="@string/numero"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bntCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+    <TextView
+        android:id="@+id/tvUni"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDez"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bntCalc" />
+
+    <TextView
+        android:id="@+id/tvDez"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUni" />
+
+    <TextView
+        android:id="@+id/tvCen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDez" />
+
+    <Button
+        android:id="@+id/bntCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="@string/calc"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvUni"
+        app:layout_constraintEnd_toEndOf="@+id/etNum"
+        app:layout_constraintStart_toStartOf="@+id/etNum"
+        app:layout_constraintTop_toBottomOf="@+id/etNum" />
+</androidx.constraintlayout.widget.ConstraintLayout>

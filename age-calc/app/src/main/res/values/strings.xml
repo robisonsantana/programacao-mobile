@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AgeCalc</string>
+    <string name="nome_ra">Robison Santana da Silva - 1110482313007</string>
+    <string name="ano">Ano Nascimento</string>
+    <string name="mes">Mês Nascimento</string>
+    <string name="dia">Dia Nascimento</string>
+    <string name="calc">Calcular</string>
+</resources>

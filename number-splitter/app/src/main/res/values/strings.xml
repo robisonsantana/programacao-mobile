@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Number Splitter</string>
+    <string name="nome_ra">Robison Santana da Silva - 1110482313007</string>
+    <string name="numero">Digite um Número</string>
+    <string name="calc">Dividir</string>
+    <string name="dez">DEZENA:</string>
+    <string name="cent">CENTENA:</string>
+    <string name="uni">UNIDADE:</string>
+</resources>

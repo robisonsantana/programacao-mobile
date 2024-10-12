@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNomeRa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/nome_ra"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etDia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeRa" />
+
+    <EditText
+        android:id="@+id/etDia"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/dia"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etMes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <EditText
+        android:id="@+id/etMes"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="@string/mes"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etAno"
+        app:layout_constraintStart_toStartOf="@+id/etDia"
+        app:layout_constraintTop_toBottomOf="@+id/etDia" />
+
+    <EditText
+        android:id="@+id/etAno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/ano"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bntCalc"
+        app:layout_constraintStart_toStartOf="@+id/etMes"
+        app:layout_constraintTop_toBottomOf="@+id/etMes" />
+
+    <Button
+        android:id="@+id/bntCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="@string/calc"
+        app:layout_constraintBottom_toTopOf="@+id/tvRes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAno" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="212dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="278dp"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bntCalc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
