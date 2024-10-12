@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bit Converter</string>
+    <string name="nome_ra">Robison Santana da Silva - 1110482313007</string>
+    <string name="bit">Quantidade de bits</string>
+    <string name="bytes">Bytes</string>
+    <string name="kb">KB</string>
+    <string name="mb">MB</string>
+    <string name="gb">GB</string>
+    <string name="tb">TB</string>
+    <string name="calc">Calcular</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dice Roller Pro</string>
+    <string name="nome_ra">Robison Santana da Silva - 1110482313007</string>
+    <string name="qtd_dados">Quantidade de dados:</string>
+    <string name="um">1</string>
+    <string name="dois">2</string>
+    <string name="tres">3</string>
+    <string name="calc">Lançar</string>
+</resources>
