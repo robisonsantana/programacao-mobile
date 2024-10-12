@@ -12,6 +12,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+/*
+ *@author:<Robison>
+ *@ra:<1110482313007>
+ */
 public class MainActivity extends AppCompatActivity {
 
     //Declaração de campos de tela
@@ -45,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*
+     *@author:<Robison>
+     *@ra:<1110482313007>
+     */
     private void calc() {
 
         //Coletar valores das Text Label
