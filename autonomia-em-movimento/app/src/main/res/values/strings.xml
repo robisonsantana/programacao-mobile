@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Autonomia em Movimento</string>
+    <string name="nome_ra">Robison Santana da Silva - 1110482313007</string>
+    <string name="consumo_medio">Consumo médio (km/l)</string>
+    <string name="qtd_litros">Quantidade de combustível no tanque (litros)</string>
+    <string name="calc">Calcular</string>
+</resources>

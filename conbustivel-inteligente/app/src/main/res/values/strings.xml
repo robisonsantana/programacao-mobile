@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConbustivelInteligente</string>
+    <string name="title">Gasolina x Etanol</string>
+    <string name="nome_ra">Robison Santana da Silva - 1110482313007</string>
+    <string name="gasolina">Qual o preço da gasolina?</string>
+    <string name="etanol">Qual o preço do etanol?</string>
+    <string name="calc">Comparar</string>
+</resources>
