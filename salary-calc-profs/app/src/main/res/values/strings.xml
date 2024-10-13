@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SalaryCalc Profs</string>
+    <string name="nome_ra">Robison Santana da Silva - 1110482313007</string>
+    <string name="prof_titular">Professor Titular</string>
+    <string name="prof_horista">Professor Horista</string>
+    <string name="horas_anos">Horas de Trabalho ou Anos Trabalhados:</string>
+    <string name="calc">Calcular</string>
+    <string name="rs">R$</string>
+</resources>

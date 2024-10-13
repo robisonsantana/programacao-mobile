@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNomeRA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/nome_ra"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="181dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeRA" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etAnosHoras"
+        app:layout_constraintStart_toStartOf="@+id/etAnosHoras"
+        app:layout_constraintTop_toBottomOf="@+id/bntCalc" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="336dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/etAnosHoras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <RadioButton
+            android:id="@+id/rbProfTitular"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:text="@string/prof_titular" />
+
+        <RadioButton
+            android:id="@+id/rbProfHorista"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/prof_horista" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etAnosHoras"
+        android:layout_width="339dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/horas_anos"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bntCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/bntCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="@string/calc"
+        app:layout_constraintBottom_toTopOf="@+id/tvRes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAnosHoras" />
+</androidx.constraintlayout.widget.ConstraintLayout>
