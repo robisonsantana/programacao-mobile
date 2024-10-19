@@ -1,0 +1,12 @@
+<resources>
+    <string name="nome_ra">Robison Santana da Silva - 1110482313007</string>
+    <string name="app_name">Gestão de Contas Bancárias</string>
+    <string name="poupanca">Conta Poupança</string>
+    <string name="especial">Conta Especial</string>
+    <string name="valor">Digite o valor</string>
+    <string name="rend">Digite a taxa de rendimento (%)</string>
+    <string name="sacar">Sacar</string>
+    <string name="dep">Depositar</string>
+    <string name="calc">Calcular Rendimento</string>
+    <string name="saldo">Saldo: R$ 0.00</string>
+</resources>

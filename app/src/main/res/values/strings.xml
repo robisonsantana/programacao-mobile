@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AdequacySegundoGram</string>
+    <string name="title_name">Equação de Segundo Grau</string>
+    <string name="a">Valor de "A"</string>
+    <string name="b">Valor de "B"</string>
+    <string name="c">Valor de "C"</string>
+    <string name="calc">Calcular</string>
+</resources>

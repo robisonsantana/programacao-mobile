@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_identificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/nome_ra"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rg_tipo_conta"
+        app:layout_constraintStart_toStartOf="@+id/rg_tipo_conta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_identificacao" />
+
+    <RadioGroup
+        android:id="@+id/rg_tipo_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/et_valor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo">
+
+        <RadioButton
+            android:id="@+id/rb_conta_poupanca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poupanca" />
+
+        <RadioButton
+            android:id="@+id/rb_conta_especial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/especial" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_valor"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
+        android:hint="@string/valor"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/et_taxa_rendimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_tipo_conta" />
+
+    <Button
+        android:id="@+id/btn_depositar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/dep"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcular_rendimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sacar" />
+
+    <Button
+        android:id="@+id/btn_calcular_rendimento"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/calc"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tv_saldo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_depositar" />
+
+    <Button
+        android:id="@+id/btn_sacar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/sacar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_depositar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_taxa_rendimento" />
+
+    <EditText
+        android:id="@+id/et_taxa_rendimento"
+        android:layout_width="379dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="9dp"
+        android:hint="@string/rend"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sacar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_valor" />
+
+    <TextView
+        android:id="@+id/tv_saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="245dp"
+        android:text="@string/saldo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular_rendimento" />
+
+    <TextView
+        android:id="@+id/tv_erro"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="245dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_saldo"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
