@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Venda de Ingressos</string>
+    <string name="ident">Robison Santana da Silva - 1110482313007</string>
+    <string name="cod">Código do Ingresso</string>
+    <string name="valor">Valor do Ingresso</string>
+    <string name="taxa">Taxa de Conveniência</string>
+    <string name="comum">Ingresso Normal</string>
+    <string name="vip">Ingresso VIP</string>
+    <string name="func">Função Desempenhada (VIP)</string>
+    <string name="buy">Comprar</string>
+    <string name="det">Detalhes da Compra</string>
+    <string name="back">Voltar</string>
+</resources>
