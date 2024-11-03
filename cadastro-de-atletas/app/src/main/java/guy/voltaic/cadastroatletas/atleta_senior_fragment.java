@@ -16,6 +16,10 @@ import java.util.List;
 import guy.voltaic.cadastroatletas.control.ControleAtletaSenior;
 import guy.voltaic.cadastroatletas.model.AtletaSenior;
 
+/*
+ *@author:<Robison>
+ *@ra:<1110482313007>
+ */
 public class atleta_senior_fragment extends Fragment {
 
     private EditText nomeInput, nascimentoInput, bairroInput, problemasInput;

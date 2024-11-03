@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import guy.voltaic.cadastroatletas.model.*;
 
+/*
+ *@author:<Robison>
+ *@ra:<1110482313007>
+ */
 public class ControleAtletaJuvenil implements ControleGenerico<AtletaJuvenil> {
     private List<AtletaJuvenil> atletasJuvenis = new ArrayList<>();
 

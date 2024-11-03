@@ -15,6 +15,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+/*
+ *@author:<Robison>
+ *@ra:<1110482313007>
+ */
 public class MainActivity extends AppCompatActivity {
 
     private Fragment fragment;
