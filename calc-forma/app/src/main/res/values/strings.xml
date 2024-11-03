@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calcular Formas</string>
+    <string name="ident">Robison Santana da Silva - 1110482313007</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="calcArea">Calcular Área</string>
+    <string name="calcPelimetro">Calcular Perímetro</string>
+    <string name="raio">Raio</string>
+</resources>
