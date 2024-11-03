@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cadastro Atletas</string>
+    <string name="ident">Robison Santana da Silva - 1110482313007</string>
+    <string name="juvenil">Juvenil</string>
+    <string name="senior">Sênior</string>
+    <string name="outros">Outros</string>
+    <string name="nome">Nome</string>
+    <string name="dtNasc">Data de Nascimento</string>
+    <string name="bairro">Bairro</string>
+    <string name="anos">Anos de Prática</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="card">Problemas Cardíacos (Sim/Não)</string>
+    <string name="acad">Academia</string>
+    <string name="record">Recorde (em segundos)</string>
+</resources>
