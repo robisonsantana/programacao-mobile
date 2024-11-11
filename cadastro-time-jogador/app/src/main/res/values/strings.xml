@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cadastro Time Jogador</string>
+    <string name="ident">Robison Santana da Silva - 1110482313007</string>
+    <string name="id">ID</string>
+    <string name="nome">Nome</string>
+    <string name="dtNasc">Data de Nascimento (AAAA-MM-DD)</string>
+    <string name="altura">Altura (m)</string>
+    <string name="peso">Peso (kg)</string>
+    <string name="time">Nome do Time</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="deletar">Deletar</string>
+    <string name="buscar">Buscar</string>
+    <string name="listar">Listar</string>
+    <string name="cod">Código</string>
+    <string name="city">Cidade</string>
+</resources>
