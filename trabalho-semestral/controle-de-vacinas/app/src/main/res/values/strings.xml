@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">VaccineTracker</string>
+    <string name="ident">Robison Santana da Silva - 1110482313007</string>
+    <string name="nome_vacina">Nome da Vacina</string>
+    <string name="dt_aplic">Data de Aplicação</string>
+    <string name="lote">Lote</string>
+    <string name="resp_aplic">Responsável pela Aplicação</string>
+    <string name="id">ID (para procura/atualização/deleção)</string>
+    <string name="extra">Extra (Idade ou Necessidade de Reforço)</string>
+    <string name="cad">Cadastrar</string>
+    <string name="atu">Atualizar</string>
+    <string name="del">Deletar</string>
+    <string name="proc">Procurar</string>
+    <string name="list">Listar Todos</string>
+    <string name="nome">Nome</string>
+    <string name="dt_nasc">Data de Nascimento</string>
+    <string name="email">Email</string>
+</resources>

@@ -49,18 +49,16 @@ public class TimeDao implements ITimeDao, ICRUDDao<Time> {
     public Time findOne(Time time) throws SQLException {
         String sql = "SELECT * FROM time WHERE id = " + time.getCodigo();
         Cursor cursor = database.rawQuery(sql, null);
-        if(cursor != null) {
-            cursor.moveToFirst();
-        }
-        if(cursor != null) {
-            cursor.moveToFirst();
-        }
-        if(!cursor.isAfterLast()) {
+        if (cursor != null && cursor.moveToFirst()) {
             time.setCodigo(cursor.getInt(cursor.getColumnIndex("codigo")));
             time.setNome(cursor.getString(cursor.getColumnIndex("nome")));
             time.setCidade(cursor.getString(cursor.getColumnIndex("cidade")));
+        } else {
+            time = null;
         }
-        cursor.close();
+        if (cursor != null) {
+            cursor.close();
+        }
         return time;
     }
 
